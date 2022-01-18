@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "@mui/material/Button";
+import { Delete } from "@mui/icons-material";
+import SendIcon from '@mui/icons-material/Send';
 
 function MUIButton() {
   const ButtonClick = () => {
-    alert("Button Click");
+    // alert("Button Click");
+    setColor("secondary");
   };
   // function ButtonClick(){
   //   alert('Button Click')
   // }
+
+  const [color, setColor] = useState("primary");
 
   return (
     <div>
@@ -21,16 +26,19 @@ function MUIButton() {
       <div>
         <Button>Click</Button>
         <Button
-          variant="text"
+          color={color}
+          variant="contained"
           onClick={() => {
             ButtonClick();
           }}
         >
           Text
         </Button>
-        <Button variant="contained">Contained</Button>
-        <Button variant="outlined">Outlined</Button>
         <Button variant="contained" disabled>
+          Contained
+        </Button>
+        <Button variant="outlined">Outlined</Button>
+        <Button variant="outlined" disabled>
           Disabled
         </Button>
       </div>
@@ -46,6 +54,23 @@ function MUIButton() {
           Error
         </Button>
       </div>
+      <p>
+        <hr />
+      </p>
+      <div>
+        <Button size="small" variant="contained">Small</Button>
+        <Button size="medium" variant="contained">Medium</Button>
+        <Button size="large" variant="contained">Large</Button>
+      </div>
+      <p>
+        <hr />
+      </p>
+      <Button variant="outlined" startIcon={<Delete />}>
+        Delete
+      </Button>
+      <Button variant="contained" endIcon={<SendIcon />}>
+        Send
+      </Button>
     </div>
   );
 }
