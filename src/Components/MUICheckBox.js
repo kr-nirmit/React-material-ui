@@ -1,8 +1,16 @@
 import { Bookmark, BookmarkBorder } from "@mui/icons-material";
 import { Checkbox } from "@mui/material";
-import React from "react";
+import React, {useState} from "react";
 
 function MUICheckBox() {
+
+    const [game, setGame] = useState([])
+    const handleChange = (e) => {
+        let data = game;
+        data.push(e.target.value)
+        console.log(data);
+      };
+
   return (
     <div>
       <h1>React Material Ui CheckBoxes</h1>
@@ -14,6 +22,11 @@ function MUICheckBox() {
       </div><hr />
       <div>
           <Checkbox icon={<BookmarkBorder />} checkedIcon={<Bookmark />} />
+      </div><hr />
+      <div>
+          <Checkbox value='Cricket' onChange={handleChange} />
+          <Checkbox value='FootBall' onChange={handleChange} />
+          <Checkbox value='Table-Tennis' onChange={handleChange} />
       </div>
     </div>
   );
