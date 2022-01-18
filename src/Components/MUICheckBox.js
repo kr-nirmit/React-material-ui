@@ -24,9 +24,9 @@ function MUICheckBox() {
           <Checkbox icon={<BookmarkBorder />} checkedIcon={<Bookmark />} />
       </div><hr />
       <div>
-          <Checkbox value='Cricket' onChange={handleChange} />
-          <Checkbox value='FootBall' onChange={handleChange} />
-          <Checkbox value='Table-Tennis' onChange={handleChange} />
+          <Checkbox value='Cricket' onChange={handleChange} />Cricket
+          <Checkbox value='FootBall' onChange={handleChange} />FootBall
+          <Checkbox value='Table-Tennis' onChange={handleChange} />Table-Tennis
       </div>
     </div>
   );
