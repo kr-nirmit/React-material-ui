@@ -6,6 +6,7 @@ import MUICheckBox from "./Components/MUICheckBox";
 import MUIAvatar from "./Stake/MUIAvatar";
 import MUIBox from "./Stake/MUIBox";
 import MUIBreadcrumbs from "./Stake/MUIBreadcrumbs";
+import MUICard from "./Stake/MUICard";
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
 
       {/* <MUIAvatar /> */}
       {/* <MUIBox /> */}
-      <MUIBreadcrumbs />
+      {/* <MUIBreadcrumbs /> */}
+      <MUICard />
     </div>
   );
 }
