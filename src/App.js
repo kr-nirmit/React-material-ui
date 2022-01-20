@@ -10,6 +10,7 @@ import MUICard from "./Stake/MUICard";
 import MUIContainer from "./Stake/MUIContainer";
 import MUIGrid from "./Stake/MUIGrid";
 import MUILink from "./Stake/MUILink";
+import HorizontalSteppe from "./Stake/HorizontalSteppe"
 
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
       {/* <MUICard /> */}
       {/* <MUIContainer /> */}
       {/* <MUIGrid /> */}
-      <MUILink />
+      {/* <MUILink /> */}
+      <HorizontalSteppe />
     </div>
   );
 }
