@@ -11,6 +11,7 @@ import MUIContainer from "./Stake/MUIContainer";
 import MUIGrid from "./Stake/MUIGrid";
 import MUILink from "./Stake/MUILink";
 import HorizontalSteppe from "./Stake/HorizontalSteppe"
+import VerticalStepper from "./Stake/VerticalStepper";
 
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
       {/* <MUIContainer /> */}
       {/* <MUIGrid /> */}
       {/* <MUILink /> */}
-      <HorizontalSteppe />
+      {/* <HorizontalSteppe /> */}
+      <VerticalStepper />
     </div>
   );
 }
