@@ -9,6 +9,7 @@ import MUIBreadcrumbs from "./Stake/MUIBreadcrumbs";
 import MUICard from "./Stake/MUICard";
 import MUIContainer from "./Stake/MUIContainer";
 import MUIGrid from "./Stake/MUIGrid";
+import MUILink from "./Stake/MUILink";
 
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
       {/* <MUIBreadcrumbs /> */}
       {/* <MUICard /> */}
       {/* <MUIContainer /> */}
-      <MUIGrid />
+      {/* <MUIGrid /> */}
+      <MUILink />
     </div>
   );
 }
