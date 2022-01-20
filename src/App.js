@@ -3,6 +3,7 @@ import "./App.css";
 import MUIButton from "./Components/MUIButton";
 import MUIButtonGroup from "./Components/MUIButtonGroup";
 import MUICheckBox from "./Components/MUICheckBox";
+import MUIAvatar from "./Stake/MUIAvatar";
 
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
     <div className="App">
       {/* <MUIButton /> */}
       {/* <MUIButtonGroup /> */}
-      <MUICheckBox />
+      {/* <MUICheckBox /> */}
+
+      <MUIAvatar />
     </div>
   );
 }
