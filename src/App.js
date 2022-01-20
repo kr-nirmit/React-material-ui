@@ -8,6 +8,7 @@ import MUIBox from "./Stake/MUIBox";
 import MUIBreadcrumbs from "./Stake/MUIBreadcrumbs";
 import MUICard from "./Stake/MUICard";
 import MUIContainer from "./Stake/MUIContainer";
+import MUIGrid from "./Stake/MUIGrid";
 
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
       {/* <MUIBox /> */}
       {/* <MUIBreadcrumbs /> */}
       {/* <MUICard /> */}
-      <MUIContainer />
+      {/* <MUIContainer /> */}
+      <MUIGrid />
     </div>
   );
 }
